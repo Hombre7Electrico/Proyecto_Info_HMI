@@ -211,7 +211,7 @@ Image5->Show();     //aparece el tanque rojo
 void __fastcall TForm1::DdeClientItem3Change(TObject *Sender)
 {
 //SE ACTUALIZA LA INTERFAZ CON EL NUEVO VALOR LEIDO
-Label13->Caption =DdeClientItem3->Text.c_str();
+Label13->Caption = atof(DdeClientItem3->Text.c_str());
 
 }
 //---------------------------------------------------------------------------

@@ -9651,8 +9651,8 @@ object Form1: TForm1
   end
   object GroupBox4: TGroupBox
     Left = 624
-    Top = 240
-    Width = 169
+    Top = 288
+    Width = 145
     Height = 81
     Caption = 'CARBONATACI'#211'N'
     TabOrder = 2
@@ -9715,7 +9715,7 @@ object Form1: TForm1
     OnClick = Button7Click
   end
   object GroupBox6: TGroupBox
-    Left = 792
+    Left = 768
     Top = 137
     Width = 145
     Height = 96
