@@ -164,7 +164,7 @@ if(DdeClientConv1->OpenLink()) //orden de establecer la comunicación
 void __fastcall TForm1::DdeClientItem1Change(TObject *Sender)
 {
 //SE ACTUALIZA LA INTERFAZ CON EL NUEVO VALOR LEIDO
-Label11->Caption = DdeClientItem1->Text;
+Label11->Caption =  atoi(DdeClientItem1->Text.c_str());
 
 
 if(atoi(Label11->Caption.c_str())> 7.5)          //pH agua
@@ -188,7 +188,7 @@ Image2->Show();     //aparece el tanque rojo
 void __fastcall TForm1::DdeClientItem2Change(TObject *Sender)
 {
 //SE ACTUALIZA LA INTERFAZ CON EL NUEVO VALOR LEIDO
-Label12->Caption = DdeClientItem2->Text;
+Label12->Caption = atoi(DdeClientItem2->Text.c_str());
 
 if(atoi(Label12->Caption.c_str())> 100)              //temperatura jarabe simple
 {
@@ -211,7 +211,7 @@ Image5->Show();     //aparece el tanque rojo
 void __fastcall TForm1::DdeClientItem3Change(TObject *Sender)
 {
 //SE ACTUALIZA LA INTERFAZ CON EL NUEVO VALOR LEIDO
-Label13->Caption = DdeClientItem3->Text;
+Label13->Caption = atoi(DdeClientItem3->Text.c_str());
 
 }
 //---------------------------------------------------------------------------
@@ -219,7 +219,7 @@ Label13->Caption = DdeClientItem3->Text;
 void __fastcall TForm1::DdeClientItem4Change(TObject *Sender)
 {
 //SE ACTUALIZA LA INTERFAZ CON EL NUEVO VALOR LEIDO
-Label14->Caption = DdeClientItem4->Text;
+Label14->Caption = atoi(DdeClientItem4->Text.c_str());
 
 if(atoi(Label14->Caption.c_str())> 15)         //Presion carbonatador
 {
@@ -242,7 +242,7 @@ Image7->Show();     //aparece el tanque rojo
 void __fastcall TForm1::DdeClientItem5Change(TObject *Sender)
 {
 //SE ACTUALIZA LA INTERFAZ CON EL NUEVO VALOR LEIDO
-Label23->Caption = DdeClientItem5->Text;
+Label23->Caption = atoi(DdeClientItem5->Text.c_str());
 
 if(atoi(Label12->Caption.c_str())> 30)               //pH gaseosa
 {
@@ -273,12 +273,18 @@ if(DdeClientItem3->Text!="")
     Table1->FieldByName("Ph gaseosa")->AsInteger=atoi(DdeClientItem5->Text.c_str());
     Table1->Post(); //guardar y cerrar el registro
 
-    //GRAFICO EL PH
-    PerformanceGraph1->DataPoint(clYellow,atoi(DdeClientItem3->Text.c_str()));
+    //GRAFICO EL PH del agua
+    PerformanceGraph1->DataPoint(clYellow,atoi(DdeClientItem1->Text.c_str()));
     PerformanceGraph1->Update();
-
+    //grafico ph de la bebida
     PerformanceGraph2->DataPoint(clRed,atoi(DdeClientItem5->Text.c_str()));
     PerformanceGraph2->Update();
+    //grafico temperatura jarabe simple
+    PerformanceGraph3->DataPoint(clFuchsia, atoi(DdeClientItem2->Text.c_str()));
+    PerformanceGraph3->Update();
+    //grafico temparatura jarabe terminado
+    PerformanceGraph4->DataPoint(clAqua, atoi(DdeClientItem3->Text.c_str()));
+    PerformanceGraph4->Update();
   }
 
 }
@@ -301,6 +307,35 @@ Form1->Close();
 void __fastcall TForm1::Salir1Click(TObject *Sender)
 {
 Application->Terminate();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::RadioButton1Click(TObject *Sender)
+{
+PerformanceGraph1->Show();
+PerformanceGraph2->Hide();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::RadioButton2Click(TObject *Sender)
+{
+PerformanceGraph2->Show();
+PerformanceGraph1->Hide();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::RadioButton3Click(TObject *Sender)
+{
+PerformanceGraph3->Show();
+PerformanceGraph4->Hide();
+
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::RadioButton4Click(TObject *Sender)
+{
+PerformanceGraph4->Show();
+PerformanceGraph3->Hide();
 }
 //---------------------------------------------------------------------------
 
