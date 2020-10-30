@@ -125,16 +125,23 @@ __published:	// IDE-managed Components
         TLabel *Label5;
         TLabel *Label10;
         TLabel *Label1;
-        TLabel *Label24;
         TLabel *Label25;
+        TLabel *Label24;
         TLabel *Label26;
+        TLabel *Label27;
+        TLabel *Label28;
+        TButton *Button1;
+        TPanel *Panel3;
+        TLabel *Label29;
+        TButton *Button2;
+        TButton *Button5;
+        TButton *Button8;
+        TButton *Button9;
         void __fastcall Iniciarsecion1Click(TObject *Sender);
         void __fastcall Cerrarsecion1Click(TObject *Sender);
         void __fastcall Agregarusuario1Click(TObject *Sender);
         void __fastcall Eliminarusuario1Click(TObject *Sender);
         void __fastcall Modificarusuario1Click(TObject *Sender);
-        void __fastcall Button2Click(TObject *Sender);
-        void __fastcall Button1Click(TObject *Sender);
         void __fastcall Acercade1Click(TObject *Sender);
         void __fastcall Button3Click(TObject *Sender);
         void __fastcall Button4Click(TObject *Sender);
@@ -153,7 +160,15 @@ __published:	// IDE-managed Components
         void __fastcall RadioButton2Click(TObject *Sender);
         void __fastcall RadioButton3Click(TObject *Sender);
         void __fastcall RadioButton4Click(TObject *Sender);
-      
+        void __fastcall Button1Click(TObject *Sender);
+        void __fastcall Button2Click(TObject *Sender);
+        void __fastcall Button8Click(TObject *Sender);
+        void __fastcall Button5Click(TObject *Sender);
+        void __fastcall Seleccionarreceta1Click(TObject *Sender);
+        void __fastcall Modificarreceta1Click(TObject *Sender);
+        void __fastcall Nuevareceta1Click(TObject *Sender);
+
+
 private:	// User declarations
 public:		// User declarations
         __fastcall TForm1(TComponent* Owner);

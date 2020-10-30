@@ -1,9 +1,9 @@
 object Form2: TForm2
   Left = 860
   Top = 242
-  Width = 365
-  Height = 208
-  Caption = 'FormInicio'
+  Width = 295
+  Height = 148
+  Caption = 'Iniciar sesi'#243'n'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -14,50 +14,62 @@ object Form2: TForm2
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
-    Left = 64
-    Top = 32
-    Width = 36
-    Height = 13
-    Caption = 'Usuario'
+    Left = 32
+    Top = 16
+    Width = 50
+    Height = 16
+    Caption = 'Usuario:'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
   end
   object Label2: TLabel
-    Left = 64
-    Top = 64
-    Width = 54
-    Height = 13
-    Caption = 'Contrasena'
+    Left = 10
+    Top = 40
+    Width = 72
+    Height = 16
+    Caption = 'Contrase'#241'a:'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
   end
   object Button1: TButton
-    Left = 136
-    Top = 128
-    Width = 73
+    Left = 80
+    Top = 72
+    Width = 89
     Height = 25
-    Caption = 'Iniciar'
+    Caption = 'Iniciar '
     TabOrder = 0
   end
   object Button2: TButton
-    Left = 240
-    Top = 128
-    Width = 75
+    Left = 184
+    Top = 72
+    Width = 91
     Height = 25
     Caption = 'Cancelar'
     TabOrder = 1
     OnClick = Button2Click
   end
   object Edit1: TEdit
-    Left = 128
-    Top = 24
+    Left = 80
+    Top = 16
     Width = 193
     Height = 21
     TabOrder = 2
-    Text = 'completar'
+    Text = 'Escriba Aqu'#237
   end
   object Edit2: TEdit
-    Left = 128
-    Top = 56
+    Left = 80
+    Top = 40
     Width = 193
     Height = 21
     TabOrder = 3
-    Text = 'completar'
+    Text = 'Escriba Aqu'#237
   end
 end

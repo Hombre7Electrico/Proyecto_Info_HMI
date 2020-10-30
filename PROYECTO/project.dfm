@@ -1,8 +1,8 @@
 object Form1: TForm1
-  Left = -129
-  Top = 37
-  Width = 1378
-  Height = 675
+  Left = 304
+  Top = 128
+  Width = 1397
+  Height = 718
   Caption = 'Producci'#243'n de Gaseosa'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -18,7 +18,7 @@ object Form1: TForm1
   object Image3: TImage
     Left = -8
     Top = 0
-    Width = 985
+    Width = 969
     Height = 593
     Picture.Data = {
       0A544A504547496D616765B3BC0100FFD8FFE000104A46494600010101006400
@@ -7500,8 +7500,8 @@ object Form1: TForm1
   object Image8: TImage
     Left = 768
     Top = 304
-    Width = 177
-    Height = 315
+    Width = 161
+    Height = 297
     Picture.Data = {
       0A544A504547496D616765207C0000FFD8FFE000104A46494600010101006400
       640000FFE110D04578696600004D4D002A000000080004013B00020000000350
@@ -8502,7 +8502,7 @@ object Form1: TForm1
     Left = 768
     Top = 306
     Width = 161
-    Height = 311
+    Height = 295
     Picture.Data = {
       0A544A504547496D61676590820000FFD8FFE000104A46494600010101006400
       640000FFE110D04578696600004D4D002A000000080004013B00020000000350
@@ -9551,10 +9551,10 @@ object Form1: TForm1
       B1E4B91332C672430E447995B4FB9194A8EB79B29716C28B4A516C94E3FFD9}
   end
   object VrClock1: TVrClock
-    Left = 1264
-    Top = 544
-    Width = 105
-    Height = 65
+    Left = 1296
+    Top = 536
+    Width = 73
+    Height = 49
     Threaded = True
     Active = True
     Palette.Low = clBlack
@@ -9651,8 +9651,8 @@ object Form1: TForm1
   end
   object GroupBox4: TGroupBox
     Left = 624
-    Top = 240
-    Width = 169
+    Top = 288
+    Width = 145
     Height = 81
     Caption = 'CARBONATACI'#211'N'
     TabOrder = 2
@@ -9715,8 +9715,8 @@ object Form1: TForm1
     OnClick = Button7Click
   end
   object GroupBox6: TGroupBox
-    Left = 792
-    Top = 137
+    Left = 776
+    Top = 145
     Width = 145
     Height = 96
     Caption = 'BEBIDA GASIFICADA'
@@ -9758,44 +9758,76 @@ object Form1: TForm1
     end
   end
   object GroupBox1: TGroupBox
-    Left = 983
+    Left = 975
     Top = 529
-    Width = 266
+    Width = 314
     Height = 86
     Caption = 'USUARIO'
     Color = cl3DLight
     ParentColor = False
     TabOrder = 8
     object Label1: TLabel
-      Left = 144
-      Top = 8
-      Width = 72
+      Left = 169
+      Top = 16
+      Width = 88
       Height = 13
       Caption = 'Usuario Actual:'
-    end
-    object Label24: TLabel
-      Left = 144
-      Top = 40
-      Width = 46
-      Height = 13
-      Caption = 'Jerarquia:'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentFont = False
     end
     object Label25: TLabel
-      Left = 144
-      Top = 24
-      Width = 114
+      Left = 261
+      Top = 16
+      Width = 38
       Height = 13
-      Caption = '___________________'
+      Caption = 'Label25'
+    end
+    object Label24: TLabel
+      Left = 169
+      Top = 40
+      Width = 57
+      Height = 13
+      Caption = 'Jerarquia:'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentFont = False
     end
     object Label26: TLabel
-      Left = 144
-      Top = 64
-      Width = 114
+      Left = 228
+      Top = 40
+      Width = 38
       Height = 13
-      Caption = '___________________'
+      Caption = 'Label26'
+    end
+    object Label27: TLabel
+      Left = 169
+      Top = 64
+      Width = 46
+      Height = 13
+      Caption = 'Receta:'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Label28: TLabel
+      Left = 216
+      Top = 64
+      Width = 38
+      Height = 13
+      Caption = 'Label28'
     end
     object VrDemoButton1: TVrDemoButton
-      Left = 8
+      Left = 16
       Top = 16
       Width = 129
       Height = 25
@@ -9814,7 +9846,7 @@ object Form1: TForm1
       OnClick = VrDemoButton1Click
     end
     object VrDemoButton2: TVrDemoButton
-      Left = 8
+      Left = 16
       Top = 48
       Width = 129
       Height = 25
@@ -9978,6 +10010,77 @@ object Form1: TForm1
       OnClick = RadioButton4Click
     end
   end
+  object Button1: TButton
+    Left = 1295
+    Top = 592
+    Width = 74
+    Height = 25
+    Caption = ' Salir'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 12
+    OnClick = Button1Click
+  end
+  object Panel3: TPanel
+    Left = 728
+    Top = 8
+    Width = 233
+    Height = 97
+    Color = clGradientInactiveCaption
+    TabOrder = 13
+    object Label29: TLabel
+      Left = 72
+      Top = 8
+      Width = 83
+      Height = 20
+      Caption = 'RECETAS'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Microsoft Sans Serif'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Button2: TButton
+      Left = 8
+      Top = 32
+      Width = 105
+      Height = 25
+      Caption = 'Seleccionar Receta'
+      TabOrder = 0
+      OnClick = Button2Click
+    end
+    object Button5: TButton
+      Left = 120
+      Top = 32
+      Width = 105
+      Height = 25
+      Caption = 'Nueva Receta'
+      TabOrder = 1
+      OnClick = Button5Click
+    end
+    object Button8: TButton
+      Left = 8
+      Top = 64
+      Width = 105
+      Height = 25
+      Caption = 'Modificar Receta'
+      TabOrder = 2
+      OnClick = Button8Click
+    end
+    object Button9: TButton
+      Left = 120
+      Top = 64
+      Width = 105
+      Height = 25
+      Caption = 'Eliminar Receta'
+      TabOrder = 3
+    end
+  end
   object MainMenu1: TMainMenu
     Left = 4
     Top = 3
@@ -10030,15 +10133,18 @@ object Form1: TForm1
       Caption = 'Recetas'
       object Seleccionarreceta1: TMenuItem
         Caption = 'Seleccionar receta'
+        OnClick = Seleccionarreceta1Click
       end
       object Modificarreceta1: TMenuItem
         Caption = 'Modificar receta'
+        OnClick = Modificarreceta1Click
       end
       object N2: TMenuItem
         Caption = '-'
       end
       object Nuevareceta1: TMenuItem
         Caption = 'Nueva receta'
+        OnClick = Nuevareceta1Click
       end
       object Eliminarreceta1: TMenuItem
         Caption = 'Eliminar receta'
@@ -10081,39 +10187,39 @@ object Form1: TForm1
   end
   object DdeClientItem1: TDdeClientItem
     OnChange = DdeClientItem1Change
-    Left = 1129
-    Top = 626
+    Left = 1040
+    Top = 618
   end
   object DdeClientItem2: TDdeClientItem
     OnChange = DdeClientItem2Change
-    Left = 1169
-    Top = 626
+    Left = 1080
+    Top = 618
   end
   object DdeClientItem3: TDdeClientItem
     OnChange = DdeClientItem3Change
-    Left = 1210
-    Top = 626
+    Left = 1121
+    Top = 618
   end
   object DdeClientItem4: TDdeClientItem
     OnChange = DdeClientItem4Change
-    Left = 1248
-    Top = 626
+    Left = 1159
+    Top = 618
   end
   object DdeClientConv1: TDdeClientConv
     ServiceApplication = 'SERVIDOR_Project1'
     DdeService = 'SERVIDOR_Project1'
     DdeTopic = 'DdeServerConv1'
     ConnectMode = ddeManual
-    Left = 1328
-    Top = 626
+    Left = 1239
+    Top = 618
     LinkInfo = (
       'Service SERVIDOR_Project1'
       'Topic DdeServerConv1')
   end
   object DdeClientItem5: TDdeClientItem
     OnChange = DdeClientItem5Change
-    Left = 1288
-    Top = 626
+    Left = 1199
+    Top = 618
   end
   object Table1: TTable
     Active = True
@@ -10134,7 +10240,7 @@ object Form1: TForm1
   end
   object DataSource2: TDataSource
     DataSet = Table2
-    Left = 248
+    Left = 240
     Top = 9
   end
 end
