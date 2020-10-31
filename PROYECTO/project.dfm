@@ -1,8 +1,8 @@
 object Form1: TForm1
-  Left = 304
-  Top = 128
-  Width = 1397
-  Height = 718
+  Left = 188
+  Top = 111
+  Width = 1378
+  Height = 675
   Caption = 'Producci'#243'n de Gaseosa'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET

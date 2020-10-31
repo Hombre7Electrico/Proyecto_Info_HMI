@@ -86,6 +86,24 @@ void __fastcall TForm1::Acercade1Click(TObject *Sender)
 Application->MessageBox("Proyecto realizado por Luis Patty, Nadia Marquardt y Leandro Albornoz.\nAño 2020","Acerca de...",MB_OK | MB_ICONASTERISK);
 }
 //---------------------------------------------------------------------------
+//if(label<amarillo_bajo)  //primer pregunta
+//{
+//if(label<amarillo_bajo_bajo) //segunda pregunta
+//{
+//mostrar cartel rojo;    //alarma roja ll
+//}
+//else{
+//mostrar cartel amarillo; //alarma amarilla l
+//if(label>amarillo_alto)  //primer pregunta
+//{
+//if(label>amarillo_alto_alto) //segunda pregunta
+//{
+//mostrar cartel rojo;    //alarma roja hh
+//}
+//else{
+//mostrar cartel amarillo; //alarma amarilla h
+//}
+//}//fin if
 
 
 
@@ -156,12 +174,13 @@ Form1->Label28->Hide();
 if(DdeClientConv1->OpenLink()) //orden de establecer la comunicación
    Beep();
 }
+//FloatToStrF(data_out,ffNumber,20,3);
 //---------------------------------------------------------------------------
 //  CONFIGURACION DEL EVENTO DEL ITEM 1 CUANDO DETECTA UN CAMBIO
 void __fastcall TForm1::DdeClientItem1Change(TObject *Sender)
 {
 //SE ACTUALIZA LA INTERFAZ CON EL NUEVO VALOR LEIDO
-Label11->Caption =  atoi(DdeClientItem1->Text.c_str());
+Label11->Caption =DdeClientItem1->Text.c_str();
 
 
 if(atoi(Label11->Caption.c_str())> 7.5)          //pH agua
@@ -177,7 +196,7 @@ if(atoi(Label11->Caption.c_str())>8)
 Image1->Hide();     //desaparece el tanque amarillo
 Image2->Show();     //aparece el tanque rojo
 }
-//else
+//else  FloatToStrF(data_out,ffNumber,20,3);
 //Image2->Hide();
 }
 //---------------------------------------------------------------------------
@@ -185,15 +204,14 @@ Image2->Show();     //aparece el tanque rojo
 void __fastcall TForm1::DdeClientItem2Change(TObject *Sender)
 {
 //SE ACTUALIZA LA INTERFAZ CON EL NUEVO VALOR LEIDO
-Label12->Caption = atoi(DdeClientItem2->Text.c_str());
+Label12->Caption =DdeClientItem2->Text.c_str();
 
 if(atoi(Label12->Caption.c_str())> 100)              //temperatura jarabe simple
 {
 Image4->Show();     //aparece el tanque amarillo
 
 }
-//else
-//Image4->Hide();
+
 
 if(atoi(Label12->Caption.c_str())>130)
 {
@@ -208,15 +226,14 @@ Image5->Show();     //aparece el tanque rojo
 void __fastcall TForm1::DdeClientItem3Change(TObject *Sender)
 {
 //SE ACTUALIZA LA INTERFAZ CON EL NUEVO VALOR LEIDO
-Label13->Caption = atoi(DdeClientItem3->Text.c_str());
-
+Label13->Caption =DdeClientItem3->Text.c_str();
 }
 //---------------------------------------------------------------------------
 //  CONFIGURACION DEL EVENTO DEL ITEM 4 CUANDO DETECTA UN CAMBIO
 void __fastcall TForm1::DdeClientItem4Change(TObject *Sender)
 {
 //SE ACTUALIZA LA INTERFAZ CON EL NUEVO VALOR LEIDO
-Label14->Caption = atoi(DdeClientItem4->Text.c_str());
+Label14->Caption=DdeClientItem4->Text.c_str();
 
 if(atoi(Label14->Caption.c_str())> 15)         //Presion carbonatador
 {
@@ -239,7 +256,7 @@ Image7->Show();     //aparece el tanque rojo
 void __fastcall TForm1::DdeClientItem5Change(TObject *Sender)
 {
 //SE ACTUALIZA LA INTERFAZ CON EL NUEVO VALOR LEIDO
-Label23->Caption = atoi(DdeClientItem5->Text.c_str());
+Label23->Caption =DdeClientItem5->Text.c_str();
 
 if(atoi(Label12->Caption.c_str())> 30)               //pH gaseosa
 {
