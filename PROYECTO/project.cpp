@@ -43,6 +43,12 @@ bool llave3;
 int caudalimetro6,presionCarbonatador,caudalimetro7;
 bool llave4;
 
+float ll_pha=3;
+float l_pha=4;
+float h_pha=5.5;
+float hh_pha=6;
+
+
 //---------------------------------------------------------------------------
 __fastcall TForm1::TForm1(TComponent* Owner)
         : TForm(Owner)
@@ -179,25 +185,36 @@ if(DdeClientConv1->OpenLink()) //orden de establecer la comunicación
 //  CONFIGURACION DEL EVENTO DEL ITEM 1 CUANDO DETECTA UN CAMBIO
 void __fastcall TForm1::DdeClientItem1Change(TObject *Sender)
 {
+float pha=0;
 //SE ACTUALIZA LA INTERFAZ CON EL NUEVO VALOR LEIDO
 Label11->Caption =DdeClientItem1->Text.c_str();
+pha=atof(DdeClientItem1->Text.c_str());
 
+if(pha<l_pha){        //consulta por bajo
+        if(pha<ll_pha){
+        Image1->Hide();     //desaparece el tanque amarillo
+        Image2->Show();     //aparece el tanque rojo
+        }
+        else{
+        Image1->Show();     //desaparece el tanque amarillo
+        Image2->Hide();     //aparece el tanque rojo
+        }
 
-if(atoi(Label11->Caption.c_str())> 7.5)          //pH agua
-{
-Image1->Show();     //aparece el tanque amarillo
+}       //fin primer if
+else{       //consulta por alto
+        if(pha>h_pha){        //consulta por alto
+        if(pha>hh_pha){
+        Image1->Hide();     //desaparece el tanque amarillo
+        Image2->Show();     //aparece el tanque rojo
+        }
+        else{
+        Image1->Show();     //desaparece el tanque amarillo
+        Image2->Hide();     //aparece el tanque rojo
+        }
 
+}       //fin primer if
 }
-//else
-//Image1->Hide();
 
-if(atoi(Label11->Caption.c_str())>8)
-{
-Image1->Hide();     //desaparece el tanque amarillo
-Image2->Show();     //aparece el tanque rojo
-}
-//else  FloatToStrF(data_out,ffNumber,20,3);
-//Image2->Hide();
 }
 //---------------------------------------------------------------------------
 //  CONFIGURACION DEL EVENTO DEL ITEM 2 CUANDO DETECTA UN CAMBIO
