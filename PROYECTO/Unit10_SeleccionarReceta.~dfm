@@ -1,6 +1,6 @@
 object Form10: TForm10
-  Left = 510
-  Top = 330
+  Left = 487
+  Top = 266
   Width = 233
   Height = 163
   Caption = 'Seleccionar Receta'
@@ -44,7 +44,8 @@ object Form10: TForm10
     Top = 72
     Width = 83
     Height = 25
-    Caption = 'Salir'
+    Caption = 'Volver'
     TabOrder = 2
+    OnClick = Button2Click
   end
 end

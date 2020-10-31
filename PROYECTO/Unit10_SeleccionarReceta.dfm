@@ -1,6 +1,6 @@
 object Form10: TForm10
-  Left = 487
-  Top = 266
+  Left = 190
+  Top = 112
   Width = 233
   Height = 163
   Caption = 'Seleccionar Receta'

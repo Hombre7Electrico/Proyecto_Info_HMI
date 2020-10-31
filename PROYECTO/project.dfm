@@ -1,6 +1,6 @@
 object Form1: TForm1
-  Left = 188
-  Top = 111
+  Left = -114
+  Top = 25
   Width = 1378
   Height = 675
   Caption = 'Producci'#243'n de Gaseosa'

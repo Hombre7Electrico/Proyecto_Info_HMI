@@ -8,7 +8,7 @@
       Unit4_EliminarUsuario.obj Unit5_ModificarUsuario.obj Unit6_Estado_Agua.obj 
       Unit7_Estado_jsimple.obj Unit8_Estado_jconcentrado.obj 
       Unit9_Estado_carbonatacion.obj Unit10_SeleccionarReceta.obj 
-      Unit11_ModificarReceta.obj"/>
+      Unit11_ModificarReceta.obj Unit12_NuevaReceta.obj"/>
     <RESFILES value="unit1.res"/>
     <IDLFILES value=""/>
     <IDLGENFILES value=""/>
@@ -17,7 +17,7 @@
       Unit4_EliminarUsuario.dfm Unit5_ModificarUsuario.dfm Unit6_Estado_Agua.dfm 
       Unit7_Estado_jsimple.dfm Unit8_Estado_jconcentrado.dfm 
       Unit9_Estado_carbonatacion.dfm Unit10_SeleccionarReceta.dfm 
-      Unit11_ModificarReceta.dfm"/>
+      Unit11_ModificarReceta.dfm Unit12_NuevaReceta.dfm"/>
     <LIBFILES value=""/>
     <LIBRARIES value="Vcwb6.lib bcbsmp.lib vcldb.lib bdertl.lib dbrtl.lib vclx.lib rtl.lib vcl.lib"/>
     <SPARELIBS value="vcl.lib rtl.lib vclx.lib dbrtl.lib bdertl.lib vcldb.lib bcbsmp.lib Vcwb6.lib"/>
@@ -76,6 +76,7 @@
       <FILE FILENAME="Unit9_Estado_carbonatacion.cpp" FORMNAME="Form9" UNITNAME="Unit9_Estado_carbonatacion" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
       <FILE FILENAME="Unit10_SeleccionarReceta.cpp" FORMNAME="Form10" UNITNAME="Unit10_SeleccionarReceta" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
       <FILE FILENAME="Unit11_ModificarReceta.cpp" FORMNAME="Form11" UNITNAME="Unit11_ModificarReceta" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unit12_NuevaReceta.cpp" FORMNAME="Form12" UNITNAME="Unit12_NuevaReceta" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
   </FILELIST>
   <BUILDTOOLS>
   </BUILDTOOLS>

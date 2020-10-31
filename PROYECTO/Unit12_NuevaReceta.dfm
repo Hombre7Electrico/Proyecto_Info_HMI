@@ -1,6 +1,6 @@
 object Form12: TForm12
-  Left = 827
-  Top = 185
+  Left = 783
+  Top = 110
   Width = 342
   Height = 272
   Caption = 'Nueva Receta'

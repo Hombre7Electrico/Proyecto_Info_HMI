@@ -1,6 +1,6 @@
 object Form11: TForm11
-  Left = 820
-  Top = 170
+  Left = 423
+  Top = 112
   Width = 359
   Height = 293
   Caption = 'Modificar Receta'
