@@ -59,9 +59,14 @@ __published:	// IDE-managed Components
         TComboBox *ComboBox4;
         TEdit *Edit5;
         TLabel *Label17;
+        TButton *Button4;
+        TButton *Button5;
         void __fastcall RadioButton1Click(TObject *Sender);
         void __fastcall RadioButton2Click(TObject *Sender);
         void __fastcall RadioButton3Click(TObject *Sender);
+        void __fastcall Button4Click(TObject *Sender);
+        void __fastcall Button5Click(TObject *Sender);
+
 private:	// User declarations
 public:		// User declarations
         __fastcall TForm13(TComponent* Owner);

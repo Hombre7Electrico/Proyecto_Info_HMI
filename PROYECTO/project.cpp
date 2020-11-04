@@ -16,6 +16,7 @@
 #include "Unit10_SeleccionarReceta.h"
 #include "Unit11_ModificarReceta.h"
 #include "Unit12_NuevaReceta.h"
+#include "Unit13.h"
 
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
@@ -92,27 +93,6 @@ void __fastcall TForm1::Acercade1Click(TObject *Sender)
 Application->MessageBox("Proyecto realizado por Luis Patty, Nadia Marquardt y Leandro Albornoz.\nAño 2020","Acerca de...",MB_OK | MB_ICONASTERISK);
 }
 //---------------------------------------------------------------------------
-//if(label<amarillo_bajo)  //primer pregunta
-//{
-//if(label<amarillo_bajo_bajo) //segunda pregunta
-//{
-//mostrar cartel rojo;    //alarma roja ll
-//}
-//else{
-//mostrar cartel amarillo; //alarma amarilla l
-//if(label>amarillo_alto)  //primer pregunta
-//{
-//if(label>amarillo_alto_alto) //segunda pregunta
-//{
-//mostrar cartel rojo;    //alarma roja hh
-//}
-//else{
-//mostrar cartel amarillo; //alarma amarilla h
-//}
-//}//fin if
-
-
-
 void __fastcall TForm1::Button3Click(TObject *Sender)
 {
     Form6->ShowModal();   //muestra form2, podes usar form1 igual
@@ -187,6 +167,8 @@ void __fastcall TForm1::DdeClientItem1Change(TObject *Sender)
 {
 float pha=0;
 //SE ACTUALIZA LA INTERFAZ CON EL NUEVO VALOR LEIDO
+
+if(DdeClientItem1->Text!=""){
 Label11->Caption =DdeClientItem1->Text.c_str();
 pha=atof(DdeClientItem1->Text.c_str());
 
@@ -214,7 +196,7 @@ else{       //consulta por alto
 
 }       //fin primer if
 }
-
+}//if de ""
 }
 //---------------------------------------------------------------------------
 //  CONFIGURACION DEL EVENTO DEL ITEM 2 CUANDO DETECTA UN CAMBIO
@@ -338,6 +320,7 @@ Form1->Label26->Hide();
 
 void __fastcall TForm1::Salir1Click(TObject *Sender)
 {
+DdeClientConv1->CloseLink();
 Application->Terminate();
 }
 //---------------------------------------------------------------------------
@@ -415,6 +398,18 @@ Form11->Show();
 void __fastcall TForm1::Nuevareceta1Click(TObject *Sender)
 {
 Form12->Show();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::GestindeUsuarios1Click(TObject *Sender)
+{
+Form3->ShowModal();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::N2Click(TObject *Sender)
+{
+Form13->ShowModal();
 }
 //---------------------------------------------------------------------------
 

@@ -31,21 +31,12 @@ __published:	// IDE-managed Components
         TMainMenu *MainMenu1;
         TMenuItem *Usuarios1;
         TMenuItem *Logueo1;
-        TMenuItem *Gestiondeusuarios1;
         TMenuItem *Iniciarsecion1;
         TMenuItem *Cerrarsecion1;
-        TMenuItem *Agregarusuario1;
-        TMenuItem *Eliminarusuario1;
-        TMenuItem *N1;
-        TMenuItem *Modificarusuario1;
         TMenuItem *Comunicacion1;
         TMenuItem *TCPIP1;
         TMenuItem *Recetas1;
-        TMenuItem *Seleccionarreceta1;
-        TMenuItem *Modificarreceta1;
         TMenuItem *N2;
-        TMenuItem *Nuevareceta1;
-        TMenuItem *Eliminarreceta1;
         TMenuItem *Consultas1;
         TMenuItem *Porfecha1;
         TMenuItem *Porusuario1;
@@ -59,7 +50,6 @@ __published:	// IDE-managed Components
         TLabel *Label7;
         TLabel *Label8;
         TLabel *Label9;
-        TMenuItem *Desconectar1;
         TMenuItem *Salir1;
         TButton *Button3;
         TButton *Button4;
@@ -137,6 +127,8 @@ __published:	// IDE-managed Components
         TButton *Button5;
         TButton *Button8;
         TButton *Button9;
+        TMenuItem *GestindeUsuarios1;
+        TMenuItem *N1;
         void __fastcall Iniciarsecion1Click(TObject *Sender);
         void __fastcall Cerrarsecion1Click(TObject *Sender);
         void __fastcall Agregarusuario1Click(TObject *Sender);
@@ -167,6 +159,8 @@ __published:	// IDE-managed Components
         void __fastcall Seleccionarreceta1Click(TObject *Sender);
         void __fastcall Modificarreceta1Click(TObject *Sender);
         void __fastcall Nuevareceta1Click(TObject *Sender);
+        void __fastcall GestindeUsuarios1Click(TObject *Sender);
+        void __fastcall N2Click(TObject *Sender);
 
 
 private:	// User declarations
