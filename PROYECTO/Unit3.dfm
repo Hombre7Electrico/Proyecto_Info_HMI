@@ -1,8 +1,8 @@
 object Form3: TForm3
-  Left = 663
-  Top = 148
-  Width = 359
-  Height = 300
+  Left = 654
+  Top = 338
+  Width = 345
+  Height = 217
   Caption = 'Agregar usuario'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -14,73 +14,83 @@ object Form3: TForm3
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
-    Left = 40
-    Top = 16
-    Width = 185
-    Height = 13
+    Left = 32
+    Top = 8
+    Width = 276
+    Height = 20
     Caption = 'Introduzca los datos del nuevo usuario:'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
   end
   object Label2: TLabel
-    Left = 96
-    Top = 48
+    Left = 64
+    Top = 32
     Width = 91
     Height = 13
     Caption = 'Nombre del usuario'
   end
   object Label3: TLabel
-    Left = 112
-    Top = 112
+    Left = 82
+    Top = 80
     Width = 54
     Height = 13
-    Caption = 'Contrasena'
+    Caption = 'Contrase'#241'a'
   end
   object Label4: TLabel
-    Left = 112
-    Top = 176
-    Width = 43
+    Left = 66
+    Top = 128
+    Width = 87
     Height = 13
-    Caption = 'Jerarquia'
+    Caption = 'Nivel de Jerarqu'#237'a'
   end
   object Button1: TButton
-    Left = 264
-    Top = 48
-    Width = 75
+    Left = 224
+    Top = 112
+    Width = 97
     Height = 25
     Caption = 'Agregar'
     TabOrder = 0
   end
   object Button2: TButton
-    Left = 264
-    Top = 128
-    Width = 75
+    Left = 224
+    Top = 144
+    Width = 97
     Height = 25
     Caption = 'Cerrar'
     TabOrder = 1
     OnClick = Button2Click
   end
   object Edit1: TEdit
-    Left = 40
-    Top = 72
+    Left = 17
+    Top = 48
     Width = 185
     Height = 21
     TabOrder = 2
-    Text = 'Edit1'
+    Text = 'Escriba Aqu'#237
   end
   object Edit2: TEdit
-    Left = 40
-    Top = 136
+    Left = 17
+    Top = 96
     Width = 185
     Height = 21
     TabOrder = 3
-    Text = 'Edit2'
+    Text = 'Escriba Aqu'#237
   end
   object ComboBox1: TComboBox
-    Left = 32
-    Top = 192
-    Width = 193
+    Left = 16
+    Top = 144
+    Width = 185
     Height = 21
     ItemHeight = 13
     TabOrder = 4
-    Text = 'ComboBox1'
+    Text = 'Seleccione'
+    Items.Strings = (
+      'Administrador'
+      'Encargado'
+      'Elaborador')
   end
 end

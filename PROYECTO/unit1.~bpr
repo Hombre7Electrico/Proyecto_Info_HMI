@@ -4,18 +4,22 @@
   <MACROS>
     <VERSION value="BCB.06.00"/>
     <PROJECT value="unit1.exe"/>
-    <OBJFILES value="unit1.obj project.obj Unit2.obj Unit3.obj Unit4.obj Unit5.obj 
-      Unit6_Estado_Agua.obj Unit7_Estado_jsimple.obj 
-      Unit8_Estado_jconcentrado.obj Unit9_Estado_carbonatacion.obj"/>
+    <OBJFILES value="unit1.obj project.obj Unit2_IniciarSesion.obj Unit3_AgregarUsuario.obj 
+      Unit4_EliminarUsuario.obj Unit5_ModificarUsuario.obj Unit6_Estado_Agua.obj 
+      Unit7_Estado_jsimple.obj Unit8_Estado_jconcentrado.obj 
+      Unit9_Estado_carbonatacion.obj Unit10_SeleccionarReceta.obj 
+      Unit11_ModificarReceta.obj Unit12_NuevaReceta.obj Unit13.obj"/>
     <RESFILES value="unit1.res"/>
     <IDLFILES value=""/>
     <IDLGENFILES value=""/>
     <DEFFILE value=""/>
-    <RESDEPEN value="$(RESFILES) project.dfm Unit2.dfm Unit3.dfm Unit4.dfm Unit5.dfm 
-      Unit6_Estado_Agua.dfm Unit7_Estado_jsimple.dfm 
-      Unit8_Estado_jconcentrado.dfm Unit9_Estado_carbonatacion.dfm"/>
+    <RESDEPEN value="$(RESFILES) project.dfm Unit2_IniciarSesion.dfm Unit3_AgregarUsuario.dfm 
+      Unit4_EliminarUsuario.dfm Unit5_ModificarUsuario.dfm Unit6_Estado_Agua.dfm 
+      Unit7_Estado_jsimple.dfm Unit8_Estado_jconcentrado.dfm 
+      Unit9_Estado_carbonatacion.dfm Unit10_SeleccionarReceta.dfm 
+      Unit11_ModificarReceta.dfm Unit12_NuevaReceta.dfm Unit13.dfm"/>
     <LIBFILES value=""/>
-    <LIBRARIES value="Vcwb6.lib"/>
+    <LIBRARIES value="Vcwb6.lib bcbsmp.lib vcldb.lib bdertl.lib dbrtl.lib vclx.lib rtl.lib vcl.lib"/>
     <SPARELIBS value="vcl.lib rtl.lib vclx.lib dbrtl.lib bdertl.lib vcldb.lib bcbsmp.lib Vcwb6.lib"/>
     <PACKAGES value="vcl.bpi rtl.bpi dbrtl.bpi adortl.bpi vcldb.bpi vclx.bpi bdertl.bpi 
       vcldbx.bpi ibxpress.bpi dsnap.bpi cds.bpi bdecds.bpi qrpt.bpi teeui.bpi 
@@ -32,7 +36,7 @@
     <RELEASELIBPATH value="$(BCB)\lib\release"/>
     <LINKER value="ilink32"/>
     <USERDEFINES value="_DEBUG"/>
-    <SYSDEFINES value="_RTLDLL;NO_STRICT;USEPACKAGES"/>
+    <SYSDEFINES value="_RTLDLL;NO_STRICT"/>
     <MAINSOURCE value="unit1.cpp"/>
     <INCLUDEPATH value="&quot;z:\mis componentes\tiwc6&quot;;c:\componentes\tiwc6;&quot;C:\Archivos de programa\Borland\CBuilder6\Projects&quot;;&quot;C:\Documents and Settings\Admin\Escritorio\Proyectos\PROYECTO LUIS.N.L\Version1.0&quot;;$(BCB)\include;$(BCB)\include\vcl"/>
     <LIBPATH value="&quot;z:\mis componentes\tiwc6&quot;;$(BCB)\Projects\Lib;c:\componentes\tiwc6;&quot;C:\Archivos de programa\Borland\CBuilder6\Projects&quot;;&quot;C:\Documents and Settings\Admin\Escritorio\Proyectos\PROYECTO LUIS.N.L\Version1.0&quot;;$(BCB)\lib\obj;$(BCB)\lib"/>
@@ -53,7 +57,7 @@
     <OTHERFILES value=""/>
   </OPTIONS>
   <LINKER>
-    <ALLOBJ value="c0w32.obj $(PACKAGES) Memmgr.Lib sysinit.obj $(OBJFILES)"/>
+    <ALLOBJ value="c0w32.obj Memmgr.Lib sysinit.obj $(OBJFILES)"/>
     <ALLRES value="$(RESFILES)"/>
     <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mti.lib"/>
     <OTHERFILES value=""/>
@@ -62,14 +66,18 @@
       <FILE FILENAME="unit1.res" FORMNAME="" UNITNAME="unit1.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
       <FILE FILENAME="unit1.cpp" FORMNAME="" UNITNAME="unit1" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
       <FILE FILENAME="project.cpp" FORMNAME="Form1" UNITNAME="project" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
-      <FILE FILENAME="Unit2.cpp" FORMNAME="Form2" UNITNAME="Unit2" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
-      <FILE FILENAME="Unit3.cpp" FORMNAME="Form3" UNITNAME="Unit3" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
-      <FILE FILENAME="Unit4.cpp" FORMNAME="Form4" UNITNAME="Unit4" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
-      <FILE FILENAME="Unit5.cpp" FORMNAME="Form5" UNITNAME="Unit5" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unit2_IniciarSesion.cpp" FORMNAME="Form2" UNITNAME="Unit2_IniciarSesion" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unit3_AgregarUsuario.cpp" FORMNAME="Form3" UNITNAME="Unit3_AgregarUsuario" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unit4_EliminarUsuario.cpp" FORMNAME="Form4" UNITNAME="Unit4_EliminarUsuario" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unit5_ModificarUsuario.cpp" FORMNAME="Form5" UNITNAME="Unit5_ModificarUsuario" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
       <FILE FILENAME="Unit6_Estado_Agua.cpp" FORMNAME="Form6" UNITNAME="Unit6_Estado_Agua" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
       <FILE FILENAME="Unit7_Estado_jsimple.cpp" FORMNAME="Form7" UNITNAME="Unit7_Estado_jsimple" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
       <FILE FILENAME="Unit8_Estado_jconcentrado.cpp" FORMNAME="Form8" UNITNAME="Unit8_Estado_jconcentrado" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
       <FILE FILENAME="Unit9_Estado_carbonatacion.cpp" FORMNAME="Form9" UNITNAME="Unit9_Estado_carbonatacion" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unit10_SeleccionarReceta.cpp" FORMNAME="Form10" UNITNAME="Unit10_SeleccionarReceta" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unit11_ModificarReceta.cpp" FORMNAME="Form11" UNITNAME="Unit11_ModificarReceta" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unit12_NuevaReceta.cpp" FORMNAME="Form12" UNITNAME="Unit12_NuevaReceta" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unit13.cpp" FORMNAME="Form13" UNITNAME="Unit13" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
   </FILELIST>
   <BUILDTOOLS>
   </BUILDTOOLS>
@@ -102,6 +110,9 @@ ProductName=
 ProductVersion=1.0.0.0
 Comments=
 
+[Excluded Packages]
+c:\archivos de programa\borland\cbuilder6\Bin\dclite60.bpl=Borland Integrated Translation Environment
+
 [Debugging]
 DebugSourceDirs=$(BCB)\source\vcl
 
@@ -126,10 +137,5 @@ LinkCGLIB=0
 AddServerUnit=1
 AddClientUnit=1
 PrecompiledHeaders=1
-
-[Language]
-ActiveLang=
-ProjectLang=
-RootDir=
   </IDEOPTIONS>
 </PROJECT>

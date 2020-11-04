@@ -1,9 +1,9 @@
 object Form7: TForm7
-  Left = 192
-  Top = 114
-  Width = 928
-  Height = 414
-  Caption = 'Estado elaboraci'#243'n j. simple'
+  Left = 125
+  Top = 283
+  Width = 451
+  Height = 344
+  Caption = 'Estado elaboraci'#243'n J. Simple'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -14,8 +14,8 @@ object Form7: TForm7
   PixelsPerInch = 96
   TextHeight = 13
   object Button1: TButton
-    Left = 120
-    Top = 80
+    Left = 352
+    Top = 272
     Width = 75
     Height = 25
     Caption = 'Cerrar'

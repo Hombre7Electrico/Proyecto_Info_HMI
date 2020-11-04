@@ -1,9 +1,9 @@
 object Form8: TForm8
-  Left = 199
-  Top = 158
-  Width = 928
-  Height = 414
-  Caption = 'Estado de elaboraci'#243'n de j concentrado'
+  Left = 397
+  Top = 302
+  Width = 453
+  Height = 351
+  Caption = 'Estado de elaboraci'#243'n de J. Concentrado'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -14,8 +14,8 @@ object Form8: TForm8
   PixelsPerInch = 96
   TextHeight = 13
   object Button1: TButton
-    Left = 128
-    Top = 80
+    Left = 360
+    Top = 280
     Width = 75
     Height = 25
     Caption = 'Cerrar'
